@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Travel</title>
+    <link rel="stylesheet" href="Scroller.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="Scroller.js"></script>
+</head>
+
+<body>
+    <main id="root">
+        <section style="background-image:url('../../assets/wallpaper.png');">
+            <div class="headbar">
+                <img class="headbar__logo" src="../../assets/logo.png" alt="logo">
+                <div class="headbar__tabsContainer">
+                    <p onclick="location.href='../../index.html';">Home</p>
+                    <p onclick="location.href='../exercicios/index.html';">Exercícios</p>
+                    <p onclick="location.href='http://lattes.cnpq.br/4113916959308153';"">Currículo Lattes</p>
+                    <p onclick=" location.href='https://github.com/daniphant' ;">Github</p>
+
+                </div>
+            </div>
+            <audio style="margin-top: 5vh" controls>
+                <source src="../../assets/jupiter.mp3" type="audio/mpeg">
+              </audio>
+            <h1>Bem-vindo ao meu tour pelo espaço.</h1>
+        </section>
+        <section style="background-image:url('../../assets/sirius.jpg'); object-fit: contain">
+            <h1>Começando com a estrela mais brilhante e bonita do nosso céu.</h1>
+            <h1>Sirius A</h1>
+            <p>Por mais grande que ela pareça ao nossos olhares, ela mesmo se sente uma mera partícula de luz perante às gigantes presentes no Universo. Quando sinto que minha existência é insignificante, ela me conforta.</p>
+        </section>
+         <section style="background-image:url('../../assets/quasar.jpg');">
+            <h1>Quasars</h1>
+            <p>Mesmo se nós morrermos, mesmo se a Terra desaparecer, se o sistema solar for engulido por um buraco negro... Os quasars sempre estarão lá, pulsando energia como a erupção de um vulcão à nivel astronômico, mantendo o Universo vivo.</p>
+        </section>
+        <section style="background-image:url('../../assets/andromeda.jpg');">
+            <h1>Andromeda</h1>
+            <p>Nossa vizinha, nossa companheira, e, em breve, parte de nós.</p>
+        </section>
+        <section style="background-image:url('../../assets/jupiter.jpg')">
+            <h1>Jupiter</h1>
+            <p>Você está escutando esse áudio? São os cantos de Jupiter... Todos sempre querem pisar na lua, ou surfar os anéis de Saturno. Eu queria poder abraçar Jupiter7.</p>
+        </section>
+        <section style="background-image:url('../../assets/comet.jpeg')"">
+            <h1>Halley</h1>
+            <p>Cometas vem e vão, contam histórias do passado e trazem novidades do futuro. Sempre sentimos o tempo como um fator linear. Mas os eventos se repetem, e somos todos parte de um grande ciclo.</p>
+        </section>
+        <section style="background-image:url('../../assets/pluto.png')"">
+            <h1>Pluto</h1>
+            <p>O pobre e esquecido Pluto, cheio de potencial, subestimado por todos. Uma história que me lembra que nunca devo julgar um livro pela capa.</p>
+        </section>
+        <section style="background-image:url('../../assets/waterdrop.png')">
+            <h1>Agua</h1>
+            <p>Afinal, se não fosse por ela, nós não seriamos, e a não sermos, não podemos contemplar a beleza do que é.</p>
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const scroller = new Scroller('#root');
+
+            document.addEventListener('wheel', (event) => scroller.listenScroll(event));
+            document.addEventListener('swipeUp', () => scroller.scroll(1));
+            document.addEventListener('swipeDown', () => scroller.scroll(-1));
+            document.addEventListener('keydown', (event) => {
+                switch (event.keyCode) {
+                    case 40:
+                        return scroller.scroll(1)
+                    case 38:
+                        return scroller.scroll(-1)
+
+                    default:
+                        return;
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

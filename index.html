@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="headbar">
+        <img class="headbar__logo" src="./assets/logo.png" alt="logo">
+        <div class="headbar__tabsContainer">
+            <p onclick="location.href='http://lattes.cnpq.br/4113916959308153';"">Currículo Lattes</p>
+            <p onclick="location.href='./pages/exercicios/index.html';">Exercícios</p>
+            <p onclick="location.href='https://github.com/daniphant';">Github</p>
+            <p onclick="location.href='./pages/space-travel/index.html';">Space Travel</p>
+        </div>
+    </div>
+    <div class="body">
+
+        <div class="body__mainInfo">
+            <div style="align-self: flex-start">
+                <div class="body__info">
+                    <p class="body__infoTitle">Olá,</p>
+                    <p class="body__infoSubtitle">Meu nome é Daniel Alvim e eu sou um engenheiro de software que adora Node.js e React! c:</p>
+                    <p class="body__infoSubtitle">Esse é o meu primeiro site estático utilizando html e css desenvolvido 100% por conta própria.</p>
+                </div>
+                <div class="body__aboutMe">
+                    <h1>Sobre Mim</h1>
+                    <p class="body__description">
+                        Eu sempre mostrei muito interesse em computadores e a tecnologia que permitia que eles funcionassem. Quando completei 15 anos, descobri o mundo da programação procurando como criar mods para meu jogo favorito até então -- Minecraft.
+                        Desde então, me ingressei no CEFET-MG onde pude aprender mais sobre algoritmos e linguages de programação e hoje, busco me especializar no desenvolvimento de aplicações no back-end e programo em React.js como hobby.
+                    </p>
+                </div>
+            </div>
+            <div style="align-self: flex-end">
+                <img class="body__avatar" src="./assets/eu.jpg">
+            </div>
+        </div>
+        <div class="body__Projects">
+            <h1>Meus Projetos</h1>
+
+            <h2>EducaRV</h2>
+            <p class="body__description"> Um conjunto de apps para mobile que funcionam como um criador e um player de decks, que são coleções de modelos de aprendizado como quizzes, flashcards e videos.</p>
+            <p class="body__description"> Tecnologias usadas: React Native, Unity3D, Node.js, MySQL</p>
+            <img src ="./assets/educarvemulador.png">
+            <img src ="./assets/educarvhome.png">
+
+            <h2>WhatsApp Web Clone</h2>
+            <p class="body__description">Um clone básico do WhatsApp Web</p>
+            <p class="body__description">Tecnologias usadas: React, Firebase</p>
+            <br>
+            <img style="width: 1280px; height: 720px;  object-fit: contain" src="./assets/whatsapp.png">
+
+            <h2>Em desenvolvimento</h2>
+            <p class="body__description"><b>Reddit clone:</b> Clone do Reddit usando Typescript, Node.js, GraphQL, PostgreSQL, React, Next.js e outras tecnologias.</p>
+            <p class="body__description"><b>Amazon Inspired E-Commerce:</b> Um site de e-commerce inspirado na Amazon usando Typescript, Node.js, GraphQL, PostgreSQL, MongoDB, React, Next.js e outras tecnologias.</p>
+            <br>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+body {
+    flex: 1;
+    background-color: #d4e1d5
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.headbar {
+    display: flex;
+    flex: 0.2;
+    place-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid lightgrey;
+    background-color: #7fc8b2;
+}
+
+.headbar__logo {
+    height: 65px;
+    object-fit: contain;
+    padding: 6px;
+    margin-left: 5vh;
+}
+
+.headbar__tabsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 5vh;
+}
+
+.headbar__tabsContainer > p {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 6px;
+    margin: 8px;
+    border-bottom: 1px solid #ff9292;
+}
+
+.headbar__tabsContainer > p:hover {
+    cursor: pointer;
+    border: 1px solid white;
+    box-shadow: inset 0 0 0 2em #ff9292;
+    border-radius: 12px
+}
+
+.body {
+    flex: 0.8;
+}
+
+.body__wallpaper {
+    object-fit: contain;
+}
+
+.body__avatar {
+    margin-top: 5vh;
+    margin-right: 5vh;
+    object-fit: contain;
+    align-self: center;
+    display: block;
+}
+
+.body > div {
+    margin-left: 5vh
+}
+
+.body__mainInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.body__info {
+    margin-top: 5vh;
+}
+
+.body__infoTitle {
+    font-size: 32px;
+    margin: 0;
+}
+
+.body__infoSubtitle {
+    font-size: 28px;
+    margin: 0;
+}
+
+.body__aboutMe {
+    max-width: 30%
+}
+
+.body__description {
+    font-size: 18px;
+    margin: 0;
+}
