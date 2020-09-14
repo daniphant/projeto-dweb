@@ -1,0 +1,46 @@
+.headbar {
+    display: flex;
+    flex: 0.2;
+    place-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid lightgrey;
+    background-color: #ff9292;
+}
+
+.headbar__logo {
+    height: 65px;
+    object-fit: contain;
+    padding: 6px;
+    margin-left: 5vh;
+}
+
+.headbar__tabsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 5vh;
+}
+
+.headbar__tabsContainer > p {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 6px;
+    margin: 8px;
+    border-bottom: 1px solid #7fc8b2;
+}
+
+.headbar__tabsContainer > p:hover {
+    cursor: pointer;
+    border: 1px solid white;
+    box-shadow: inset 0 0 0 2em #7fc8b2;
+    border-radius: 12px
+}
+
+.body__avatar {
+    margin-top: 5vh;
+    margin-right: 5vh;
+    object-fit: contain;
+    align-self: center;
+    display: block;
+}

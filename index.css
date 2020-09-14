@@ -52,7 +52,7 @@ p {
 
 .headbar__tabsContainer > p:hover {
     cursor: pointer;
-    border: 1px solid white;
+    border: 1px solid black;
     box-shadow: inset 0 0 0 2em #ff9292;
     border-radius: 12px
 }

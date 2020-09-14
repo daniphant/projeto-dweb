@@ -21,13 +21,16 @@
         <img class="headbar__logo" src="../../assets/logo.png" alt="logo">
         <div class="headbar__tabsContainer">
             <p onclick="location.href='../../index.html';">Home</p>
-            <p onclick="location.href='http://lattes.cnpq.br/4113916959308153';"">Currículo Lattes</p>
+            <p onclick="location.href='../curriculo/index.html';"">Currículo</p>
             <p onclick=" location.href='https://github.com/daniphant' ;">Github</p>
             <p onclick="location.href='../space-travel/index.html';">Space Travel</p>
+            <p onclick="location.href='../sobre/index.html';">Sobre</p>
         </div>
     </div>
-    <div style="place-items: center; align-items: center; justify-content: center; display: flex; flex-direction: column">
-        <h1>1)</h1>
+    <h2>A seguir, são os exercícios que fizemos sobre HTML, e principalmente o uso da tag table para criação de tabelas e layouts em grid.</h2>
+    <div
+        style="place-items: center; align-items: center; justify-content: center; display: flex; flex-direction: column">
+        <h3>1)</h3>
         <div>
             <ul>
                 <li>
@@ -62,7 +65,7 @@
                 </li>
             </ul>
         </div>
-        <h1>2)</h1>
+        <h3>2)</h3>
         <div>
             <table style="width:400px; margin-left:auto;margin-right:auto;border: 1px solid black">
                 <caption><b> <i>Sudeste x Sul</i> </b></caption>
@@ -145,7 +148,7 @@
                 </tr>
             </table>
         </div>
-        <h1>3)</h1>
+        <h3>3)</h3>
         <div>
             <table style="width:400px">
                 <caption><b> <i>Sudeste x Sul</i> </b></caption>
@@ -214,7 +217,7 @@
                 </tr>
             </table>
         </div>
-        <h1>4)</h1>
+        <h3>4)</h3>
         <div>
             <table style="width:400px; align-self:center">
                 <caption><b> <i>Sudeste x Sul</i> </b></caption>
@@ -298,7 +301,7 @@
                 </tr>
             </table>
         </div>
-        <h1>4)</h1>
+        <h3>4)</h3>
 
         <body>
             <table style="width:400px; align-self:center">
@@ -383,7 +386,7 @@
                 </tr>
             </table>
         </body>
-        <h1>5)</h1>
+        <h3>5)</h3>
         <div>
             <table style="width: 400px">
                 <tr>
@@ -475,7 +478,7 @@
                 </tr>
             </table>
         </div>
-        <h1>6)</h1>
+        <h3>6)</h3>
         <div>
             <table style="width: 400px; margin-left: auto; margin-right: auto; border-spacing: 10px">
                 <tr>
@@ -491,7 +494,7 @@
                 <tr>
                     <td>
                         <a href="./questao06/mistura.html"">
-                            <img src="./questao06/cafe.jpg" height="150px" />
+                            <img src=" ./questao06/cafe.jpg" height="150px" />
                         </a>
                         <b style="text-align: center">Mistura de Casa</b>
                     </td>
@@ -516,6 +519,85 @@
                 </tr>
             </table>
         </div>
+        <h2>Essa foi a última atividade desenvolvida. Trata-se de um formulário simples para nos ensinar o básico sobre forms e inputs.</h2>
+        <div>
+            <div style="text-align: center">
+                <h1>Escola Virtual</h1>
+                <h2>Formulário de Pré Matricula</h2>
+            </div>
+
+            <hr />
+
+            <form style="border: 1px solid gray">
+
+                <div style="align-self: center; border: 1px solid black">
+                    <h2 stlye="text-align: left">Dados Pessoais:</h2>
+                    Nome do Aluno:
+                    <input />
+                    <br />
+                    Nascimento (dd/mm/aaaa): <input type="date" />
+                    <br />
+                    Nome da Mãe: <input />
+                    <br />
+                    Nome do Pai: <input />
+                    <br />
+                    Telefone: DDD (<input type="number" />) Tel: <input type="number" /> Ramal: <input />
+                    <br />
+                    E-mail: <input type="email" />
+                </div>
+
+
+                <div style="align-self: center; border: 1px solid black">
+                    <h2 stlye="text-align: left">Informações de Matricula:</h2>
+                    <div style="
+                            flex: 1;
+                            flex-direction: row;
+                            display: flex;
+                            justify-content: space-between;
+                        ">
+                        <div>
+                            <p>Série:</p>
+                            <select name="series" id="series">
+                                <option value="pre">pré-escolar</option>
+                                <option value="fundamental">ensino fundamental</option>
+                                <option value="medio">ensino médio</option>
+                                <option value="superior">ensino superior</option>
+                                <option value="mestrado">mestrado</option>
+                                <option value="doutorado">doutorado</option>
+                                <option value="posdoc">pós doc</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p>Turno:</p>
+                            <input type="radio" id="manha" name="turno" value="manha">
+                            <label for="manha">Manhã</label><br>
+                            <input type="radio" id="tarde" name="turno" value="arde">
+                            <label for="tarde">Tarde</label><br>
+                        </div>
+                        <div>
+                            <p>Atividades Extracurriculares:</p>
+                            <input type="checkbox" /> Informática
+                            <br />
+                            <input type="checkbox" /> Música
+                            <br />
+                            <input type="checkbox" /> Balet
+                            <br />
+                            <input type="checkbox" /> Pintura
+                            <br />
+                            <input type="checkbox" /> Judô
+                            <br />
+                            <input type="checkbox" /> Futebol
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div style">
+            <input type="button" value="Enviar Formulários" />
+            <input type="button" value="Limpa Campos" />
+        </div>
+        </body>
     </div>
     </body>
 
