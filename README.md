@@ -1,2 +1,2 @@
 # projeto-dweb
-A project developed for my web development class's q1 final exam
+A project developed for my web development class's Q1 final exam. We had to develop each a website written exclusively in HTML with CSS & JavaScript, it had to contain a page showing all of the previous HTML questions we had, such a building specific tables after an image and etc, as well as containing a link to our Lattes curriculum, an introduction page talking about ourselves and a final custom page which we had to use our creativity to build, and I ended up giving a space tour on some of my favourite space things (and water cuz all my homies love water)
